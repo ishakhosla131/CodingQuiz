@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Coding Quiz</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="script.js"></script>
+</head>
+
+<body>
+
+  <div class="container">
+    <!--this is the first screen where the start button and timer will be displayed-->
+    <div id=screen1>
+    <div class="row textTitle">
+      <div class="col-md-4"></div>
+      <div class="col-md-4">Coding Quiz</div>
+      <div class="col-md-4"></div>
+    </div>
+    <div class="row">
+      <div class="col-md-5"></div>
+      <div class="col-md-2"><button onclick="startQuiz()" type="button" class="btn btn-success">Start Quiz</button></div>
+      <div class="col-md-5"></div>
+    </div>
+  </div>
+    <!--this is the second screen where the quiz questions will be displayed -->
+    <div class="row hidden" id="screen2">
+      <div id="timer"></div>
+     <div class="col-md-2"></div>
+      <div class="col-md-8">
+        <div class="card">
+          <div class="card-body"> 
+            <div id="questionText">This is where the question will go.</div>
+            
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadio1" value="option1"
+                checked>
+              <label class="form-check-label" for="exampleRadios1" id="answer1">
+                answer 1
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+              <label class="form-check-label" for="exampleRadios2" id="answer2">
+                answer 2
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
+              <label class="form-check-label" for="exampleRadios3"id="answer3">
+                andwer 3
+              </label>
+            </div>
+            
+          </div>
+        </div> 
+      </div>
+      <div class="col-md-2">
+      </div>
+    </div>
+
+    <!--this is the third screen where the highscore will be displayed-->
+    
+  </div>
+
+</body>
+
+</html>
